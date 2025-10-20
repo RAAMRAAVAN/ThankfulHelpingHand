@@ -60,7 +60,7 @@ const page = () => {
                 }}
 
             >
-                <Typography variant="h4" fontWeight="bold" textshadow="2px 2px 10px rgba(0,0,0,0.5)" paddingX={3}>
+                <Typography variant="h5" fontWeight="bold" textshadow="2px 2px 10px rgba(0,0,0,0.5)" paddingX={3}>
                     GOVERNING COUNCIL
                 </Typography>
             </Box>

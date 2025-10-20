@@ -374,7 +374,7 @@ const Header = () => {
         color="#bf1e2e"
         fontWeight="bold"
       >
-        {HospitalDetails?.name}
+        {NGODetails.name}
       </Typography>
 
       {/* Sticky Navbar */}

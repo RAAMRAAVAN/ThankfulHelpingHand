@@ -28,7 +28,7 @@ const navItems = [
   { name: "What We Do", link: "/facilities", Active: FacilitiesAccess },
   { name: "Resources", link: "/resources", Active: HospitalsAccess },
   { name: "Activity", link: "/news", Active: NewsAndEventsAccess },
-  { name: "Academics", link: "/academics", Active: AcademicsAccess },
+  // { name: "Academics", link: "/academics", Active: AcademicsAccess },
   { name: "Contact Us", link: "/contact", Active: ContactUsAccess },
 ];
 
@@ -56,22 +56,21 @@ export default function Navbar({ setMobileOpen, mobileOpen }) {
         <Toolbar sx={{ display: "flex", alignItems: "center", position: 'relative', zIndex: 6, minHeight: { xs: '56px !important', md: '38px !important' } }} boxshadow={0}>
           <Box sx={{ display: { xs: "flex", md: "none" } }} width='60%' justifyContent='space-between'>
             {HospitalDetails.logo_primary !== null ? <Box sx={{ display: { xs: "flex", md: "none" }, width: '50%', mr: 1 }}>
-              <Image src={`https://accf-api.cancercareinstituteguwahati.org/storage/${removeBackslashes(HospitalDetails.logo_primary)}`} alt="logo" width={45} height={40} style={{ display: 'flex', height: '45px', width: 'auto' }} />
+              <Image src='logo.gif' alt="logo" width={45} height={40} style={{ display: 'flex', height: '45px', width: 'auto' }} />
             </Box> : <></>}
-            {HospitalDetails.logo_secondary !== null ? <Box sx={{ display: { xs: "flex", md: "none" }, width: '50%', alignItems: 'end', marginBottom: 1, justifyContent: 'end' }}>
+            {/* {HospitalDetails.logo_secondary !== null ? <Box sx={{ display: { xs: "flex", md: "none" }, width: '50%', alignItems: 'end', marginBottom: 1, justifyContent: 'end' }}>
               <Image src={`https://accf-api.cancercareinstituteguwahati.org/storage/${removeBackslashes(HospitalDetails.logo_secondary)}`} alt="logo" width={45} height={40} style={{ display: 'flex', height: '40px', width: 'auto' }} />
-            </Box> : <></>}
+            </Box> : <></>} */}
           </Box>
-          <Typography sx={{ display: { xs: "none", md: "none" }, fontSize: "1rem", fontWeight: "bold", color: 'black', width: '100%', textAlign: 'center' }}>
-            {HospitalDetails?.name || "Hospital Name"}
-          </Typography>
+
           <Box sx={{ display: { xs: "flex", md: "none" }, mr: 1, width: '40%', alignItems: 'end', justifyContent: 'end' }}>
             <Box display='flex' marginX={1} flexDirection='column' alignItems='center' component="a"
-              href={`https://wa.me/${HospitalDetails.whatsapp}`}
+              href={`https://wa.me/7378587253`}
               target="_blank"
-              rel="noopener noreferrer"><IoIosMail size={24} color="gray" /><Typography fontSize={12} fontWeight='bold' color="gray">Mail</Typography></Box>
+              rel="noopener noreferrer">
+              <IoIosMail size={24} color="gray" /><Typography fontSize={12} fontWeight='bold' color="gray">Mail</Typography></Box>
             <Box display='flex' marginX={1} flexDirection='column' alignItems='center' component="a"
-              href={`tel:${HospitalDetails.phone || ""}`}><IoIosCall size={24} color="gray" /><Typography fontSize={12} fontWeight='bold' color="gray">Toll Free</Typography></Box>
+              href={`tel:7378587253`}><IoIosCall size={24} color="gray" /><Typography fontSize={12} fontWeight='bold' color="gray">Toll Free</Typography></Box>
             {/* <Box display='flex' marginX={1} flexDirection='column' alignItems='center'><IoIosCall size={24} color="gray" /><Typography fontSize={12} fontWeight='bold' color="gray">Call</Typography></Box> */}
           </Box>
           <Grid container sx={{ width: '100%', display: { md: 'flex', lg: 'flex', xl: 'flex', sm: 'none', xs: 'none' } }}>

@@ -27,11 +27,11 @@ const TowardsAchieving = () => {
           TOWARDS ACHIEVING
         </Typography>
 
-        <Typography fontSize={25}>SUSTAINABLE DEVELOPMENT GOALS</Typography>
-        <Grid container paddingX={3} justifyContent="center" marginY={5}>
+        <Typography fontSize={25} textAlign='center'>SUSTAINABLE DEVELOPMENT GOALS</Typography>
+        <Grid container justifyContent="center" marginY={5}>
           {UpcomingAchievements.map((achieve, index) => {
             return (
-              <Grid item xs={2}>
+              <Grid item lg={2} md={4} sm={6} xs={6}>
                 <Box
                   display="flex"
                   width="100%"

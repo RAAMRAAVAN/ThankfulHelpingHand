@@ -62,7 +62,7 @@ const Facilities = ({ expand, FID }) => {
       <Grid container>
         {Resources.map((resource, index) => {
           return (
-            <Grid item xs={3} padding={2}>
+            <Grid item lg={3} md={6} sm={12} xs={12} padding={2}>
               <Box
                 display="flex"
                 flexDirection="column"
