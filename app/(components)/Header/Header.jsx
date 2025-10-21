@@ -200,17 +200,25 @@ const Header = () => {
                 <Image
                   src={`QR.jpeg`}
                   alt="QR"
-                  width={100}
-                  height={100}
+                  width={300}
+                  height={300}
                   priority
                   style={{
                     objectFit: "contain",
                     width: "100%",
-                    height: "80vh",
+                    height: "70vh",
                     cursor: "pointer",
                   }}
                   // onClick={() => (window.location.href = "/")}
                 />
+
+                <Box marginX={2}>
+                  <Typography textAlign='center' color={MedantaOrange}>
+                    We urge you to play your part in gifting hope to people in
+                    need. By donating online, your generosity will help us reach
+                    more individuals and support their various needs.
+                  </Typography>
+                </Box>
                 <Button
                   variant="contained"
                   sx={{ borderRadius: 0, position: "absolute", bottom: 0 }}
