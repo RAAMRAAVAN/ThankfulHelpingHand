@@ -40,7 +40,7 @@ const LatestEvent = ({ open, setOpen, selectedVideo}) => {
                     alignItems: 'center'
                 }}
             >
-                <Box display='flex' sx={{width:{lg:'60%',md:'80%', sm:'90%', xs:'100%'}}} >
+                <Box display='flex' sx={{width:{lg:'60%',md:'80%', sm:'60%', xs:'100%'}}} >
                         {/* Make sure ReactPlayer re-renders by updating key */}
                         <VideoPlayer
                             key={1} // This will force the video to reset on change

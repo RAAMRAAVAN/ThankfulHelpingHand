@@ -13,6 +13,16 @@ import ScrollReveal from "../Animation/ScrollReveal";
 export const Activity = [
     {
       created_at: "2025-05-29 23:07:01",
+      date: "2025-10-19",
+      details:
+        "<p>.</p>",
+      id: 14,
+      indexx:13,
+      name: "Nalbari District Program",
+      photos: [{photo_path:"ACTIVITIES/NALBARI/1.jpeg"}, {photo_path:"ACTIVITIES/NALBARI/2.jpeg"},{photo_path:"ACTIVITIES/NALBARI/3.jpeg"}],
+    },
+    {
+      created_at: "2025-05-29 23:07:01",
       date: "2025-01-01",
       details:
         "<p>.</p>",
