@@ -40,7 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: "Thankful Helping Hand Foundation",
       images: [
         {
-          url: "/og-image.jpg",
+          url: "/logo.gif",
           width: 1200,
           height: 630,
           alt: "Thankful Helping Hand Foundation",
@@ -54,7 +54,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: "Thankful Helping Hand Foundation | Charity Organization India",
       description:
         "Support the Thankful Helping Hand Foundation — an NGO working for education, healthcare, and social development in India.",
-      images: ["/og-image.jpg"],
+      images: ["/logo.gif"],
       site: "@ThankfulHelpingHand",
     },
     alternates: {

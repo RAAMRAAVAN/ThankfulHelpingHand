@@ -259,8 +259,8 @@ const Header = () => {
             >
               {/* {HospitalDetails.logo_primary == null ? <></> : */}
               <Image
-                src={`logo.jpg`}
-                alt="ACCF Logo"
+                src={`logo.gif`}
+                alt="logo"
                 width={100}
                 height={100}
                 priority
