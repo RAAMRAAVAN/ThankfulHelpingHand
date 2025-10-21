@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const hospital = StaticHospital();
 
   return {
-    // metadataBase: new URL("thankfulhelpinghand.org"),
+    metadataBase: new URL("https://thankfulhelpinghand.org"),
     title: "Thankful Helping Hand Foundation",
     description:
       `Thankful Helping Hand Foundation`,
@@ -25,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: `–Thankful Helping Hand Foundation`,
       description:
         `Thankful Helping Hand Foundation`,
-      // url: "thankfulhelpinghand.org",
+      url: "https://thankfulhelpinghand.org",
       siteName: "Thankful Helping Hand Foundation",
       images: [
         {
