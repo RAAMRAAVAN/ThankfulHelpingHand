@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Footer from "../(components)/Footer/Footer";
 import HeaderPage from "../(components)/Header/HeaderPage";
 import { StaticHospital } from "@/lib/fetchData";
+import Script from "next/script";
 
 export async function generateMetadata(): Promise<Metadata> {
   const hospital = StaticHospital();
@@ -13,34 +14,28 @@ export async function generateMetadata(): Promise<Metadata> {
     title:
       "Thankful Helping Hand Foundation | NGO in India | Donate for a Better Future",
     description:
-      "Thankful Helping Hand Foundation is a registered non-profit organization in India helping underprivileged people through education, healthcare, food, and social welfare programs. Join us to make a difference.",
+      "Thankful Helping Hand Foundation is a registered NGO in India helping underprivileged people through education, healthcare, and social welfare programs.",
     keywords: [
       "Thankful Helping Hand Foundation",
-      "Thankful Helping Hand",
       "NGO in India",
-      "Non-profit organization",
-      "Charity Foundation",
-      "Donate for poor",
+      "Charity",
+      "Donate",
       "Education NGO",
       "Healthcare NGO",
-      "Food donation NGO",
-      "Help for needy people",
-      "Support NGO India",
-      "Thankful NGO",
+      "Support needy people",
     ],
     icons: {
       icon: "/logo.gif",
     },
     openGraph: {
-      title:
-        "Thankful Helping Hand Foundation | Non-Profit Organization in India",
+      title: "Thankful Helping Hand Foundation",
       description:
-        "Join Thankful Helping Hand Foundation to support education, healthcare, and welfare initiatives across India. Donate now to help those in need.",
+        "Support education, healthcare, and welfare initiatives across India.",
       url: "https://thankfulhelpinghand.org",
       siteName: "Thankful Helping Hand Foundation",
       images: [
         {
-          url: "/logo.gif",
+          url: "/og-image.jpg",
           width: 1200,
           height: 630,
           alt: "Thankful Helping Hand Foundation",
@@ -51,14 +46,11 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Thankful Helping Hand Foundation | Charity Organization India",
+      title: "Thankful Helping Hand Foundation",
       description:
         "Support the Thankful Helping Hand Foundation — an NGO working for education, healthcare, and social development in India.",
-      images: ["/logo.gif"],
+      images: ["/og-image.jpg"],
       site: "@ThankfulHelpingHand",
-    },
-    alternates: {
-      canonical: "https://thankfulhelpinghand.org",
     },
     robots: {
       index: true,
@@ -80,6 +72,35 @@ export default function Layout({ children }: { children: ReactNode }) {
       <HeaderPage />
       {children}
       <Footer />
+       {/* JSON-LD Structured Data for NGO */}
+      <Script id="ngo-jsonld" type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "NGO",
+          "name": "Thankful Helping Hand Foundation",
+          "url": "https://thankfulhelpinghand.org",
+          "logo": "https://thankfulhelpinghand.org/logo.gif",
+          "sameAs": [
+            "https://www.facebook.com/yourpage",
+            "https://www.instagram.com/yourpage",
+            "https://x.com/yourpage"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-XXXXXXXXXX",
+            "contactType": "Customer Service",
+            "email": "info@thankfulhelpinghand.org"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Your Street Address",
+            "addressLocality": "City",
+            "addressRegion": "State",
+            "postalCode": "XXXXX",
+            "addressCountry": "IN"
+          }
+        })}
+      </Script>
     </>
   );
 }
