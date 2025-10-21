@@ -35,19 +35,20 @@ const OurHospitals2 = lazy(() => import("./Hospitals/OurHospitals"));
 const ImageSliderMain = lazy(() => import("./HomeImageSlider/ImageSliderMain"));
 
 const doctors = [
+  
   {
     id: 1,
-    name: "KUNAL RATHOD",
-    designtion: "Director",
-    text: "",
-    image: "Team/kunal.jpeg",
-  },
-  {
-    id: 2,
     name: "HEMAN NATH",
     designtion: "Director",
     text: "",
     image: "Team/heman.jpeg",
+  },
+  {
+    id: 2,
+    name: "KUNAL RATHOD",
+    designtion: "Director",
+    text: "",
+    image: "Team/kunal.jpeg",
   },
   {
     id: 3,

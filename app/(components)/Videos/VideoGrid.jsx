@@ -143,7 +143,7 @@ const VideoGrid = () => {
       >
         {open ? <Box display="flex" width="100%" justifyContent="center" sx={{
           justifyContent: 'center',
-          alignItems: 'center', border: '1px black solid'
+          alignItems: 'center', border: '1px red solid'
         }}>
           <LatestEvent open={open} setOpen={setOpen} selectedVideo={LatestVideosData[selectedVideo]} />
         </Box> : <></>}

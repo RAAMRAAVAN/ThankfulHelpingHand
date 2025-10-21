@@ -40,7 +40,7 @@ const LatestEvent = ({ open, setOpen, selectedVideo}) => {
                     alignItems: 'center'
                 }}
             >
-                <Box display='flex' width='60%' >
+                <Box display='flex' sx={{width:{lg:'60%',md:'80%', sm:'90%', xs:'100%'}}} >
                         {/* Make sure ReactPlayer re-renders by updating key */}
                         <VideoPlayer
                             key={1} // This will force the video to reset on change
@@ -58,7 +58,7 @@ const LatestEvent = ({ open, setOpen, selectedVideo}) => {
 const VideoPlayer = ({ url, handleClose, title, onVideoEnd }) => {
     const [handlePlay, setHandlePlay] = useState(false);
     return (
-        <Box sx={{ width: '100%' }}>
+        <Box sx={{ width: '100%'}}>
             <Box display='flex' width='100%' justifyContent='space-between'>
                 <Typography marginLeft={1} fontSize="16px" gutterBottom color="white" fontWeight='bold' sx={{textShadow: '1px 1px 2px rgba(0,0,0,0.6)'}}>{title}</Typography>
                 {/* Close Button */}
@@ -78,6 +78,8 @@ const VideoPlayer = ({ url, handleClose, title, onVideoEnd }) => {
                     paddingTop: '56.25%', // 16:9 aspect ratio
                     overflow: 'hidden',
                     boxShadow: 3,
+                    display:'flex',
+                    // width:'100vw'
                 }}
             >
                 <ReactPlayer
@@ -86,6 +88,7 @@ const VideoPlayer = ({ url, handleClose, title, onVideoEnd }) => {
                     playing={handlePlay}
                     // muted
                     onEnded={onVideoEnd}
+                    display='flex'
                     width="100%"
                     height="100%"
                     style={{
