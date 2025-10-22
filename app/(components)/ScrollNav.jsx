@@ -24,6 +24,7 @@ import { selectHospitalDetails } from "@/redux/features/hospitalDetailSlice";
 import { useSelector } from "react-redux";
 import Image from "next/image";
 import TowardsAchieving from "./TowardsAchieving";
+import {doctors} from '../(root)/team/page';
 
 const AccomplishmentsMain = lazy(() =>
   import("./Accomplishments/AccomplichmentsMain")
@@ -33,38 +34,6 @@ const Facility2 = lazy(() => import("./Facilities/Facility2"));
 const OurHospitals = lazy(() => import("./Hospitals/OurHospitalsPage"));
 const OurHospitals2 = lazy(() => import("./Hospitals/OurHospitals"));
 const ImageSliderMain = lazy(() => import("./HomeImageSlider/ImageSliderMain"));
-
-const doctors = [
-  
-  {
-    id: 1,
-    name: "HEMAN NATH",
-    designtion: "Director",
-    text: "",
-    image: "Team/heman.jpeg",
-  },
-  {
-    id: 2,
-    name: "KUNAL RATHOD",
-    designtion: "Director",
-    text: "",
-    image: "Team/kunal.jpeg",
-  },
-  {
-    id: 3,
-    name: "MAITU DEVI",
-    designtion: "President (ASSAM)",
-    text: "",
-    image: "Team/mitu.jpeg",
-  },
-  {
-    id: 4,
-    name: "SEEMA DAS",
-    designtion: "Secretary (ASSAM)",
-    text: "",
-    image: "Team/seema.jpeg",
-  },
-];
 
 const navItems = [
   { label: "Introduction", to: "Intro" },
@@ -441,7 +410,7 @@ const ScrollNav = () => {
 
         <Box marginTop={3}>
           <Typography
-            variant="h5"
+            variant="h4"
             fontWeight="bold"
             // onClick={() => dispatch(setPage(1))}
             sx={{ cursor: "pointer", textAlign:'center', color: MedantaOrange}}

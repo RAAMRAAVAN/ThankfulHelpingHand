@@ -11,7 +11,7 @@ import { removeBackslashes } from "@/lib/fetchData";
 import { selectHospitalDetails } from "@/redux/features/hospitalDetailSlice";
 import { MedantaOrange } from "@/app/(components)/Global";
 
-const doctors = [
+export const doctors = [
   {
     id: 1,
     name: "HEMAN NATH",
@@ -26,13 +26,20 @@ const doctors = [
     text: "",
     image: "Team/kunal.jpeg",
   },
+  {
+    id: 6,
+    name: "UMA RATHOD",
+    designtion: "Director",
+    text: "",
+    image: "Team/UMA.jpeg",
+  },
 
   {
     id: 3,
     name: "BISWAKANTA NATH",
     designtion: "Advisor",
     text: "",
-    image: "",
+    image: "Team/Biswakanta Nath.jpeg",
   },
 
   {
