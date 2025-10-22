@@ -11,7 +11,7 @@ import { removeBackslashes } from "@/lib/fetchData";
 import { selectHospitalDetails } from "@/redux/features/hospitalDetailSlice";
 import { MedantaOrange } from "@/app/(components)/Global";
 
-export const doctors = [
+const doctors = [
   {
     id: 1,
     name: "HEMAN NATH",

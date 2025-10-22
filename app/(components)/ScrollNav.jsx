@@ -24,7 +24,52 @@ import { selectHospitalDetails } from "@/redux/features/hospitalDetailSlice";
 import { useSelector } from "react-redux";
 import Image from "next/image";
 import TowardsAchieving from "./TowardsAchieving";
-import {doctors} from '../(root)/team/page';
+const doctors = [
+  {
+    id: 1,
+    name: "HEMAN NATH",
+    designtion: "Director",
+    text: "",
+    image: "Team/heman.jpeg",
+  },
+  {
+    id: 2,
+    name: "KUNAL RATHOD",
+    designtion: "Director",
+    text: "",
+    image: "Team/kunal.jpeg",
+  },
+  {
+    id: 6,
+    name: "UMA RATHOD",
+    designtion: "Director",
+    text: "",
+    image: "Team/UMA.jpeg",
+  },
+
+  {
+    id: 3,
+    name: "BISWAKANTA NATH",
+    designtion: "Advisor",
+    text: "",
+    image: "Team/Biswakanta Nath.jpeg",
+  },
+
+  {
+    id: 4,
+    name: "MAITU DEVI",
+    designtion: "President (ASSAM)",
+    text: "",
+    image: "Team/mitu.jpeg",
+  },
+  {
+    id: 5,
+    name: "SEEMA DAS",
+    designtion: "Secretary (ASSAM)",
+    text: "",
+    image: "Team/seema.jpeg",
+  },
+];
 
 const AccomplishmentsMain = lazy(() =>
   import("./Accomplishments/AccomplichmentsMain")
