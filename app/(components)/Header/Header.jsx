@@ -44,6 +44,7 @@ const Header = () => {
   const [viewTaxBenifit, setViewTaxBenifit] = useState(false);
   const [openQR, setOpenQR] = useState(false);
 
+  const upiLink = "upi://pay?pa=7378587253@okbizaxis&pn=Thankful%20Helping%20Hand&tn=Donation&cu=INR";
   const handleQROpen = () => setOpenQR(true);
   const handleQRClose = () => setOpenQR(false);
 
@@ -211,6 +212,7 @@ const Header = () => {
           ) : (
             <>
               <Box display="flex" flexDirection="column" height="90vh">
+                <a href={upiLink} target="_blank" rel="noopener noreferrer">
                 <Image
                   src={`QR.jpeg`}
                   alt="QR"
@@ -225,6 +227,7 @@ const Header = () => {
                   }}
                   // onClick={() => (window.location.href = "/")}
                 />
+                </a>
 
                 <Box marginX={2}>
                   <Typography textAlign='center' color={MedantaOrange}>

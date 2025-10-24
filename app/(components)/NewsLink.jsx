@@ -42,6 +42,7 @@ export default function NewsLink() {
   const [clicked, setClicked] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
 
+   const upiLink = "upi://pay?pa=7378587253@okbizaxis&pn=Thankful%20Helping%20Hand&tn=Donation&cu=INR";
   return (
     <Grid
       container
@@ -109,6 +110,7 @@ export default function NewsLink() {
           </Box>
         ) : (
           <Box display="flex" flexDirection="column" height="90vh">
+            <a href={upiLink} target="_blank" rel="noopener noreferrer">
             <Image
               src="/QR.jpeg"
               alt="QR"
@@ -122,6 +124,7 @@ export default function NewsLink() {
                 cursor: "pointer",
               }}
             />
+            </a>
             <Button
               variant="contained"
               sx={{ borderRadius: 0, position: "absolute", bottom: 0 }}

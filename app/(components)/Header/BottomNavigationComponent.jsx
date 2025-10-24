@@ -32,6 +32,7 @@ const BottomNavigationComponent = ({ setMobileOpen, mobileOpen }) => {
   const router = useRouter();
   const [openQR, setOpenQR] = useState(false);
 
+  const upiLink = "upi://pay?pa=7378587253@okbizaxis&pn=Thankful%20Helping%20Hand&tn=Donation&cu=INR";
   const handleQROpen = () => setOpenQR(true);
   const handleQRClose = () => setOpenQR(false);
 
@@ -108,6 +109,7 @@ const BottomNavigationComponent = ({ setMobileOpen, mobileOpen }) => {
             </Box>
           ) : (
             <Box display="flex" flexDirection="column" height="90vh">
+              <a href={upiLink} target="_blank" rel="noopener noreferrer">
               <Image
                 src="/QR.jpeg"
                 alt="QR"
@@ -121,6 +123,7 @@ const BottomNavigationComponent = ({ setMobileOpen, mobileOpen }) => {
                   cursor: "pointer",
                 }}
               />
+              </a>
               <Button
                 variant="contained"
                 sx={{ borderRadius: 0, position: "absolute", bottom: 0 }}
