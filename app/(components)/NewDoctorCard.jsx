@@ -59,16 +59,6 @@ const NewDoctorCard = ({
     setTabValue(newValue);
   }, []);
 
-  // Preload Image when component mounts
-  useEffect(() => {
-    const imageUrl = image
-      ? {image}
-      : "/doctor_image.webp";
-    preloadImage(imageUrl)
-      .then((src) => setPreloadedImage(src))
-      .catch(() => console.error("Image preload failed"));
-  }, [image]);
-
   if (!DoctorsAvailability) return <Loader />;
 
   return (

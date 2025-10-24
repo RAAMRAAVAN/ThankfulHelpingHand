@@ -21,21 +21,24 @@ const ImageSliderMain = () => {
     }, [])
 
     const NGOimages = [{addedBy:1, created_at:"2025-05-21 22:28:15", hospitalId:"1", id:1,indexx:1,
-photo:"Slider/slider_1.jpeg", updated_at:"2025-05-21 22:28:15"},
+photo:"Slider/Sli_1.png", updated_at:"2025-05-21 22:28:15"},
 {addedBy:1, created_at:"2025-05-21 22:28:15", hospitalId:"1", id:2,indexx:2,
-photo:"Slider/slider_2.jpeg", updated_at:"2025-05-21 22:28:15"},
+photo:"Slider/Sli1.png", updated_at:"2025-05-21 22:28:15"},
 {addedBy:1, created_at:"2025-05-21 22:28:15", hospitalId:"1", id:3,indexx:3,
-photo:"Slider/3.jpeg", updated_at:"2025-05-21 22:28:15"},
+photo:"Slider/Sli2.png", updated_at:"2025-05-21 22:28:15"},
 {addedBy:1, created_at:"2025-05-21 22:28:15", hospitalId:"1", id:4,indexx:4,
-photo:"Slider/4.jpeg", updated_at:"2025-05-21 22:28:15"},
+photo:"Slider/Sli3.png", updated_at:"2025-05-21 22:28:15"},
 {addedBy:1, created_at:"2025-05-21 22:28:15", hospitalId:"1", id:5,indexx:5,
-photo:"Slider/5.jpeg", updated_at:"2025-05-21 22:28:15"},
+photo:"Slider/Sli4.png", updated_at:"2025-05-21 22:28:15"},
 {addedBy:1, created_at:"2025-05-21 22:28:15", hospitalId:"1", id:6,indexx:6,
-photo:"Slider/6.jpeg", updated_at:"2025-05-21 22:28:15"},
+photo:"Slider/Sli5.png", updated_at:"2025-05-21 22:28:15"},
 {addedBy:1, created_at:"2025-05-21 22:28:15", hospitalId:"1", id:7,indexx:7,
-photo:"Slider/1.jpeg", updated_at:"2025-05-21 22:28:15"},
+photo:"Slider/Sli6.png", updated_at:"2025-05-21 22:28:15"},
 {addedBy:1, created_at:"2025-05-21 22:28:15", hospitalId:"1", id:8,indexx:8,
-photo:"Slider/2.jpeg", updated_at:"2025-05-21 22:28:15"}]
+photo:"Slider/Sli7.png", updated_at:"2025-05-21 22:28:15"},
+{addedBy:1, created_at:"2025-05-21 22:28:15", hospitalId:"1", id:9,indexx:9,
+photo:"Slider/Sli8.png", updated_at:"2025-05-21 22:28:15"}
+]
     return (<>
         <ImageSlider Images={NGOimages} />
     </>);
