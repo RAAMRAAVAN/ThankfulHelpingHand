@@ -141,7 +141,7 @@ const Accomplishments = ({ accomplishments }) => {
                 VILLAGES
               </Typography>
               <Typography textAlign="center">
-                and slums are reached out to across the country
+                Slums are reached out to across the country
               </Typography>
             </Grid>
 
