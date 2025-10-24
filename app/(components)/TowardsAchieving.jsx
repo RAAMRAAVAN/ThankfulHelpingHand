@@ -3,11 +3,12 @@ import { MedantaOrange } from "./Global";
 import Image from "next/image";
 import { MonitorHeart } from "@mui/icons-material";
 
-const UpcomingAchievements = [{id: 1, color:'#ba75b2', text:'Good Health & Whell Being', img:"FIELDS/health_icon.gif"}, 
-  {id: 2,color:'#f1719c', text:'Gender Equality', img:'FIELDS/equality.png'}, 
-  {id: 3,color:'#f8be46', text:'Quality Education', img:'FIELDS/education.gif'}, 
-  {id: 4,color:'#50b256', text:'Decent Work & Economic Groth', img:'FIELDS/economic-growth.gif'}, 
-  {id: 5,color:'#606ec2', text:'Partnerships for the Goal', img:'FIELDS/handshake.gif'}];
+const UpcomingAchievements = [{id: 1, color:'#ba75b2', text:'Good Health & Well Being', img:"FIELDS/health_icon.gif"}, 
+  {id: 2,color:'#f8be46', text:'Decent Work & Economic Growth', img:'FIELDS/economic-growth.gif'}, 
+  {id: 3,color:'#f1719c', text:'Slums are Reached Out Across the Country', img:'FIELDS/poverty.png'}, 
+  {id: 4,color:'#50b256', text:'Eco-friendly Environment', img:'FIELDS/environmental-impact.png'}, 
+  // {id: 5,color:'#606ec2', text:'Partnerships for the Goal', img:'FIELDS/handshake.gif'}
+  ];
 const TowardsAchieving = () => {
   return (
     <>
@@ -81,7 +82,8 @@ const TowardsAchieving = () => {
                     justifyContent="center"
                     // border='1px black solid'
                     width="70%"
-                    top={100}
+                    top={90}
+                    padding={1}
                   >
                     <Typography
                       fontSize={12}
