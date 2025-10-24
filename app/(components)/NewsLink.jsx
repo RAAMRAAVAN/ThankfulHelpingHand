@@ -15,8 +15,9 @@ import {
   CardActions,
   Button,
   Dialog,
+  IconButton,
 } from "@mui/material";
-import { East, FiberManualRecord } from "@mui/icons-material";
+import { Close, East, FiberManualRecord } from "@mui/icons-material";
 
 import { selectNewses, setID } from "@/redux/features/newsSlice";
 import { selectHospitalDetails } from "@/redux/features/hospitalDetailSlice";
@@ -49,6 +50,19 @@ export default function NewsLink() {
       sx={{ width: { md: "100%", sm: "100%" } }}
     >
       <Dialog open={openQR} onClose={handleQRClose} maxWidth="sm" fullWidth>
+        {/* Close Button */}
+        <IconButton
+          onClick={handleQRClose}
+          sx={{
+            position: "absolute",
+            top: 8,
+            right: 8,
+            color: "grey.600",
+            zIndex: 2,
+          }}
+        >
+          <Close />
+        </IconButton>
         {viewTaxBenifit ? (
           <Box display="flex" flexDirection="column" height="90vh">
             <Box display="flex" flexDirection="column" padding={2}>

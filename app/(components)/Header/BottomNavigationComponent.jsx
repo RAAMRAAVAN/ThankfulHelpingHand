@@ -5,6 +5,7 @@ import {
   Box,
   Button,
   Dialog,
+  IconButton,
   Typography,
 } from "@mui/material";
 import {
@@ -12,6 +13,7 @@ import {
   Favorite,
   Dehaze,
   FiberManualRecord,
+  Close,
 } from "@mui/icons-material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -47,6 +49,19 @@ const BottomNavigationComponent = ({ setMobileOpen, mobileOpen }) => {
         }}
       >
         <Dialog open={openQR} onClose={handleQRClose} maxWidth="sm" fullWidth>
+          {/* Close Button */}
+          <IconButton
+            onClick={handleQRClose}
+            sx={{
+              position: "absolute",
+              top: 8,
+              right: 8,
+              color: "grey.600",
+              zIndex: 2,
+            }}
+          >
+            <Close />
+          </IconButton>
           {viewTaxBenifit ? (
             <Box display="flex" flexDirection="column" height="90vh">
               <Box display="flex" flexDirection="column" padding={2}>

@@ -11,10 +11,12 @@ import {
   DialogTitle,
   Fab,
   Grid,
+  IconButton,
   TextField,
   Typography,
 } from "@mui/material";
 import {
+  Close,
   Favorite,
   FiberManualRecord,
   KeyboardArrowUp,
@@ -89,6 +91,18 @@ const Header = () => {
         // mb={2}
       >
         <Dialog open={openQR} onClose={handleQRClose} maxWidth="sm" fullWidth>
+          <IconButton
+            onClick={handleQRClose}
+            sx={{
+              position: "absolute",
+              top: 8,
+              right: 8,
+              color: "grey.600",
+              zIndex: 2,
+            }}
+          >
+            <Close />
+          </IconButton>
           {viewTaxBenifit ? (
             <>
               <Box display="flex" flexDirection="column" height="90vh">
