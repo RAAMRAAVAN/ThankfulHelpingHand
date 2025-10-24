@@ -59,7 +59,7 @@ const doctors = [
     name: "KUNAL RATHOD",
     designtion: "Director",
     text: "",
-    image: "Team/kunal.png",
+    image: "Team/kunal2.png",
   },
 ];
 

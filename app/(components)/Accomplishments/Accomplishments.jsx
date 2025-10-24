@@ -110,6 +110,7 @@ const Accomplishments = ({ accomplishments }) => {
               sx={{ cursor: "pointer" }}
               md={3}
               sm={4}
+              paddingX={1}
               xs={12}
               border="1px black sold"
               backgroundColor="white"
@@ -141,7 +142,7 @@ const Accomplishments = ({ accomplishments }) => {
                 VILLAGES
               </Typography>
               <Typography textAlign="center">
-                Slums are reached out to across the country
+                Slums are reached out across the country
               </Typography>
             </Grid>
 
