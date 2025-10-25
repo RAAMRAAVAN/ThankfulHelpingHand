@@ -25,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "Support needy people",
     ],
     icons: {
-      icon: "/logo.gif",
+      icon: "/logo.png",
     },
     openGraph: {
       title: "Thankful Helping Hand Foundation",
@@ -79,7 +79,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           "@type": "NGO",
           "name": "Thankful Helping Hand Foundation",
           "url": "https://thankfulhelpinghand.org",
-          "logo": "https://thankfulhelpinghand.org/logo.gif",
+          "logo": "https://thankfulhelpinghand.org/logo.png",
           "sameAs": [
             "https://www.facebook.com/yourpage",
             "https://www.instagram.com/yourpage",
