@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import "../lib/font.css";
-import { Providers } from "./providers"; // ✅ client wrapper
+import { Providers } from "./providers"; // Client-side Redux + MUI
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://thankfulhelpinghand.org"),
@@ -26,18 +26,13 @@ export const metadata: Metadata = {
     ],
     type: "website",
   },
-  robots: { index: true, follow: true },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        {/* ✅ Schema markup */}
+        {/* Organization JSON-LD */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -50,13 +45,36 @@ export default function RootLayout({
               "sameAs": [
                 "https://www.facebook.com/thankfulhelpinghand",
                 "https://www.instagram.com/thankfulhelpinghand",
-              ],
+                "https://x.com/thankfulhelpinghand"
+              ]
+            }),
+          }}
+        />
+
+        {/* WebSite JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Thankful Helping Hand Foundation",
+              "url": "https://thankfulhelpinghand.org/",
+              "publisher": {
+                "@type": "Organization",
+                "name": "Thankful Helping Hand Foundation",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://thankfulhelpinghand.org/logo.png"
+                }
+              }
             }),
           }}
         />
       </head>
+
       <body>
-        {/* ✅ Client-side MUI theme provider is wrapped here */}
+        {/* Client-side providers (Redux + MUI) */}
         <Providers>{children}</Providers>
       </body>
     </html>

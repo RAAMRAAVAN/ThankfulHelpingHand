@@ -5,19 +5,14 @@ import { store } from "../redux/store";
 import { ThemeProvider, CssBaseline, createTheme } from "@mui/material";
 import { ReactNode } from "react";
 
-// ✅ Create your MUI theme here
 const theme = createTheme({
   typography: {
     fontFamily: `'Montserrat', 'Roboto', 'Helvetica', 'Arial', sans-serif`,
   },
   palette: {
     mode: "light",
-    primary: {
-      main: "#1976d2", // You can customize NGO colors
-    },
-    background: {
-      default: "#ffffff",
-    },
+    primary: { main: "#1976d2" }, // customize as needed
+    background: { default: "#ffffff" },
   },
 });
 
