@@ -39,7 +39,7 @@ const doctors = [
     name: "BISWAKANTA NATH",
     designtion: "Advisor",
     text: "",
-    image: "Team/Biswakanta Nath.jpeg",
+    image: "Team/Biswakanta2.jpeg",
   },
 
   {

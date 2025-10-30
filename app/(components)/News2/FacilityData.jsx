@@ -11,7 +11,21 @@ import ImageSlider from "../ImageSlider";
 import ScrollReveal from "../Animation/ScrollReveal";
 
 export const Activity = [
-
+  {
+    created_at: "2025-05-29 23:07:01",
+    date: "",
+    details: "<p>Our NGO organized a cloth and food donation drive to support underprivileged families. Through this initiative, we provided essential items to help bring warmth, nourishment, and hope to those in need.</p>",
+    id: 1,
+    indexx: 13,
+    name: "Helped in treatment of a Cancer Patient at State Cancer Institute",
+    photos: [
+      { photo_path: "ACTIVITIES/SCI/1.png" },
+      { photo_path: "ACTIVITIES/SCI/2.png" },
+      { photo_path: "ACTIVITIES/SCI/3.png" },
+      { photo_path: "ACTIVITIES/SCI/4.png" },
+      { photo_path: "ACTIVITIES/SCI/5.png" },
+    ],
+  },
   {
     created_at: "2025-05-29 23:07:01",
     date: "",
