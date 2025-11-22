@@ -65,12 +65,11 @@ export default function Navbar({ setMobileOpen, mobileOpen }) {
 
           <Box sx={{ display: { xs: "flex", md: "none" }, mr: 1, width: '40%', alignItems: 'end', justifyContent: 'end' }}>
             <Box display='flex' marginX={1} flexDirection='column' alignItems='center' component="a"
-              href={`https://wa.me/7378587253`}
-              target="_blank"
-              rel="noopener noreferrer">
+              href="mailto:info@thankfulhelpinghand.org"
+              >
               <IoIosMail size={24} color="gray" /><Typography fontSize={12} fontWeight='bold' color="gray">Mail</Typography></Box>
             <Box display='flex' marginX={1} flexDirection='column' alignItems='center' component="a"
-              href={`tel:7378587253`}><IoIosCall size={24} color="gray" /><Typography fontSize={12} fontWeight='bold' color="gray">Toll Free</Typography></Box>
+              href={`tel:7378587253`}><IoIosCall size={24} color="gray" /><Typography fontSize={12} fontWeight='bold' color="gray">Ph No</Typography></Box>
             {/* <Box display='flex' marginX={1} flexDirection='column' alignItems='center'><IoIosCall size={24} color="gray" /><Typography fontSize={12} fontWeight='bold' color="gray">Call</Typography></Box> */}
           </Box>
           <Grid container sx={{ width: '100%', display: { md: 'flex', lg: 'flex', xl: 'flex', sm: 'none', xs: 'none' } }}>
@@ -80,9 +79,9 @@ export default function Navbar({ setMobileOpen, mobileOpen }) {
                   if (item.Active)
                     switch (item.name) {
                       case "About Us":
-                        return(<Box key={item.name}>
-                            <AboutUsDropDown item={item} Facilities={Facilities} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                          </Box>)
+                        return (<Box key={item.name}>
+                          <AboutUsDropDown item={item} Facilities={Facilities} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+                        </Box>)
                       // case "Resources":
                       //   return (
                       //     <Box key={item.name}>
@@ -92,25 +91,25 @@ export default function Navbar({ setMobileOpen, mobileOpen }) {
                       case "What We Do":
                         return (
                           <Box key={item.name}>
-                            <FacilitiesDropdown item={item} Facilities={Facilities} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+                            <FacilitiesDropdown item={item} Facilities={Facilities} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                           </Box>
                         );
                       case "Contact Us":
-                        return <ContactUsDropdown key={item.name} item={item} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>;
+                        return <ContactUsDropdown key={item.name} item={item} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />;
                       default:
                         return (
                           <Link key={item.name} href={item.link} passHref legacyBehavior>
                             <Button sx={{
-                              borderRadius:"20px",
+                              borderRadius: "20px",
                               // fontSize:"12px",
-                              paddingX:"15px",
-                              color: selectedPage === item.link ?"white":NavElements, fontWeight: Bold ? 'bold' : none, backgroundColor: selectedPage === item.link ? MedantaOrange : 'transparent',
+                              paddingX: "15px",
+                              color: selectedPage === item.link ? "white" : NavElements, fontWeight: Bold ? 'bold' : none, backgroundColor: selectedPage === item.link ? MedantaOrange : 'transparent',
                               '&:hover': {
                                 backgroundColor: MedantaOrange,
-                                color:'white'
-                              }, marginRight:'1px'
+                                color: 'white'
+                              }, marginRight: '1px'
                             }}
-                            onClick={()=>{setSelectedPage(item.link)}}
+                              onClick={() => { setSelectedPage(item.link) }}
                             >{item.name}</Button>
                           </Link>
                         );

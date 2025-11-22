@@ -311,7 +311,7 @@ const ScrollNav = () => {
         boxShadow="5px 5px 15px rgba(0, 0, 0, 0.3)"
         marginBottom={3}
         sx={{ backgroundColor: "#f6f6f6", color: "black" }}
-        // fontFamily='fantasy'
+      // fontFamily='fantasy'
       >
         {/* Sections */}
         <Element name="Intro">
@@ -367,9 +367,11 @@ const ScrollNav = () => {
         <Box display="flex" width="100%" justifyContent="center" marginY={5}>
           <Box display="flex" maxWidth="400px">
             <Typography textAlign="center" color="orange" fontWeight="bold">
-              Aum Sarve Bhavantu Sukhinah Sarve Santu Niraamayaah | Sarve
-              Bhadraanni Pashyantu Maa Kasheid-Dukha-Bhaag-Bhavet Aum Shaantih
-              Shaantih Shaantih ||
+              ॐ सर्वे भवन्तु सुखिनः ।
+              सर्वे सन्तु निरामयाः ।
+              सर्वे भद्राणि पश्यन्तु ।
+              मा कश्चिद्दुःखभाग्भवेत् ।
+              ॐ शान्तिः शान्तिः शान्तिः ॥|
             </Typography>
           </Box>
         </Box>
@@ -387,8 +389,8 @@ const ScrollNav = () => {
             display="flex"
             width="100%"
             marginY={2}
-            // border="1px black solid"
-            // height="250px"
+          // border="1px black solid"
+          // height="250px"
           >
             <Grid container display="flex" flexDirection="row" marginX={{ xs: 0, md: 5 }}>
               {OurFields.map((field, index) => {
@@ -406,7 +408,7 @@ const ScrollNav = () => {
                       // height: "100%",
                       flexDirection: "column",
                       //   marginX:2,
-                        // border: "1px black solid",
+                      // border: "1px black solid",
                       justifyContent: "center",
                     }}
                   >
@@ -416,7 +418,7 @@ const ScrollNav = () => {
                       flexDirection="column"
                       // border='1px black solid'
                       alignItems='center'
-                      // padding={4}
+                    // padding={4}
                     >
                       <Image
                         src={field.img}
@@ -458,7 +460,7 @@ const ScrollNav = () => {
             variant="h4"
             fontWeight="bold"
             // onClick={() => dispatch(setPage(1))}
-            sx={{ cursor: "pointer", textAlign:'center', color: MedantaOrange}}
+            sx={{ cursor: "pointer", textAlign: 'center', color: MedantaOrange }}
           >
             Our Team
           </Typography>
