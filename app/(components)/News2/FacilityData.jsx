@@ -24,6 +24,11 @@ export const Activity = [
       { photo_path: "ACTIVITIES/health/3.jpg" },
       { photo_path: "ACTIVITIES/health/4.jpg" },
       { photo_path: "ACTIVITIES/health/5.jpg" },
+      { photo_path: "ACTIVITIES/health/6.jpg" },
+      { photo_path: "ACTIVITIES/health/7.jpg" },
+      { photo_path: "ACTIVITIES/health/8.jpg" },
+      { photo_path: "ACTIVITIES/health/9.jpg" },
+      { photo_path: "ACTIVITIES/health/10.jpg" },
     ],
   },
   {
