@@ -12,6 +12,21 @@ import ScrollReveal from "../Animation/ScrollReveal";
 
 export const Activity = [
   {
+    created_at: "2025-12-04 23:07:01",
+    date: "",
+    details: "<p>Our NGO conducted a community health awareness drive aimed at promoting better hygiene and disease prevention. Through this initiative, we distributed essential health kits and educated families on adopting simple, healthy habits to ensure a safer and healthier future for all.Our NGO conducted a community health awareness drive aimed at promoting better hygiene and disease prevention. Through this initiative, we distributed essential health kits and educated families on adopting simple, healthy habits to ensure a safer and healthier future for all.</p>",
+    id: 1,
+    indexx: 13,
+    name: "Health Checkup Campaign",
+    photos: [
+      { photo_path: "ACTIVITIES/health/1.jpg" },
+      { photo_path: "ACTIVITIES/health/2.jpg" },
+      { photo_path: "ACTIVITIES/health/3.jpg" },
+      { photo_path: "ACTIVITIES/health/4.jpg" },
+      { photo_path: "ACTIVITIES/health/5.jpg" },
+    ],
+  },
+  {
     created_at: "2025-05-29 23:07:01",
     date: "",
     details: "<p>Our NGO organized a cloth and food donation drive to support underprivileged families. Through this initiative, we provided essential items to help bring warmth, nourishment, and hope to those in need.</p>",
