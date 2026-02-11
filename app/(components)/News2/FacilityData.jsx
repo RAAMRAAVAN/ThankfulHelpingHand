@@ -11,6 +11,32 @@ import ImageSlider from "../ImageSlider";
 import ScrollReveal from "../Animation/ScrollReveal";
 
 export const Activity = [
+   {
+    created_at: "2026-02-01 23:07:01",
+    date: "",
+    details: "<p>Conducted a skill development program at Nagaon focused on traditional Gamusha making, empowering participants with practical weaving techniques.The initiative aimed to preserve cultural heritage while creating sustainable livelihood opportunities for the community.</p>",
+    id: 1,
+    indexx: 13,
+    name: "Skill Development",
+    photos: [
+      { photo_path: "ACTIVITIES/010226/2.jpeg" },
+      { photo_path: "ACTIVITIES/010226/3.jpeg" },
+      { photo_path: "ACTIVITIES/010226/4.jpeg" },
+      { photo_path: "ACTIVITIES/010226/5.jpeg" },
+      { photo_path: "ACTIVITIES/010226/6.jpeg" },
+    ],
+  },
+  {
+    created_at: "2026-02-01 23:07:01",
+    date: "",
+    details: "<p></p>",
+    id: 1,
+    indexx: 13,
+    name: "Helped poor people",
+    photos: [
+      { photo_path: "ACTIVITIES/010226/1.jpeg" },
+    ],
+  },
   {
     created_at: "2025-12-04 23:07:01",
     date: "",
