@@ -19,13 +19,25 @@ export const Activity = [
     indexx: 13,
     name: "Skill Development at Nagaon",
     photos: [
+      { photo_path: "ACTIVITIES/010226/4.jpeg" },
+    ],
+  },
+
+  {
+    created_at: "2026-02-01 23:07:01",
+    date: "",
+    details: "<p>Conducted a skill development program focused on traditional Gamusha making, empowering participants with practical weaving techniques.The initiative aimed to preserve cultural heritage while creating sustainable livelihood opportunities for the community.</p>",
+    id: 1,
+    indexx: 13,
+    name: "Skill Development Program",
+    photos: [
       { photo_path: "ACTIVITIES/010226/2.jpeg" },
       { photo_path: "ACTIVITIES/010226/3.jpeg" },
-      { photo_path: "ACTIVITIES/010226/4.jpeg" },
       { photo_path: "ACTIVITIES/010226/5.jpeg" },
       { photo_path: "ACTIVITIES/010226/6.jpeg" },
     ],
   },
+
   {
     created_at: "2026-02-01 23:07:01",
     date: "",
